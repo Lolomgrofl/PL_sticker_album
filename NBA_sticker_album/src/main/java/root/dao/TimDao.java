@@ -6,4 +6,5 @@ import root.domain.Tim;
 
 public interface TimDao extends JpaRepository<Tim, Long>{
 
+
 }

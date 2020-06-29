@@ -44,4 +44,9 @@ public class TimServiceImplementation implements TimService {
 		}
 	}
 
+	@Override
+	public Tim getTim(Long id) {
+		return timDao.getOne(id);
+	}
+
 }

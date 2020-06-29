@@ -44,4 +44,11 @@ public class TimApi {
 		return timService.delete(id);
 	}
 	
+	@RequestMapping(value = "/returnByTimId/{id}", method = RequestMethod.GET)
+	public @ResponseBody Tim getTim(@PathVariable Long id) {
+		if (id==null) {
+			return null;
+		}
+		return timService.getTim(id);
+	}
 }

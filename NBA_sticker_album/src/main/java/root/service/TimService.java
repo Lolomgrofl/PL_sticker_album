@@ -14,4 +14,6 @@ public interface TimService {
 
 	public Boolean delete(Long Id);
 
+	public Tim getTim(Long id);
+
 }
